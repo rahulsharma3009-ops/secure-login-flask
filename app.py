@@ -48,5 +48,6 @@ def login():
         message = "Suspicious brute-force activity detected!"
     return render_template("login.html", message=message,remaining_time=remaining_time)
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT",5000))
+    app.run()
+
     app.run(host="0.0.0.0",port=port)
