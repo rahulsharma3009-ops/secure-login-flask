@@ -1,15 +1,19 @@
-# secure-login-flask
-A Flask-based secure authentication system designed to detect and mitigate brute-force login attacks. The application monitors failed login attempts, temporarily blocks suspicious IP addresses, and display a real time countdown timer to enhance transparency and user experience. Built as a full-stack security prototype.  
-## features
-- Brute-force attack detection
-- Temporary IP blocking
-- Live countdown timer
-- Server-side enforcement
-- Clean UI with Flask templates
-## Tech Stack
+## Brute Force Attack Detection System
+## Description
+This project demonstrates a simple brute-force login attack detection system.
+It monitors login attempts and flags suspicious behavior based on multiple
+failed logins within a short time window.
+## Technology Used
 - Python
 - Flask
-- HTML, CSS, JavaScript
-## How to run locally
-'''bash
-python app.py
+- HTML
+## How It Works
+- User attempts to log in
+Generated with https://kome.ai
+- Each attempt is logged with timestamp and IP
+- Detector analyzes logs
+- Alerts when brute-force pattern is found
+## How to Run
+1. Install Flask: `pip install flask`
+2. Run: `python app.py`
+3. Open browser at `http://127.0.0.1:5000`
